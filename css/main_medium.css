@@ -1,0 +1,31 @@
+@media(max-width: 1000px) {
+    
+    /* header */
+    header .inner .menu {
+        display: none;
+    }
+    header .inner .my {
+        display: none;
+    }
+
+    #ham {
+        display: block;
+    }
+
+    /* main */
+    main .inner .section1 .img_grid a div h2 {
+        margin-bottom: 0;
+    }
+    main .inner .section1 .img_grid a div p {
+        display: none;
+    }
+    main .inner .section1 .img_grid a:nth-child(8) div h2 {
+        font-size: 30px;
+    }
+
+    main .inner .section3 .img_wrap {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}

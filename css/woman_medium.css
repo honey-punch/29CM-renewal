@@ -1,0 +1,20 @@
+@media(max-width: 1000px) {
+    
+    /* header */
+    header .inner .menu {
+        display: none;
+    }
+    header .inner .my {
+        display: none;
+    }
+
+    #ham {
+        display: block;
+    }
+
+    /* main section3 */
+    .container .section3 .inner .ranking .category_ranking .tabmenu .tab_list li:nth-child(2),
+    .container .section3 .inner .ranking .category_ranking .tabmenu .tab_list li:nth-child(3) {
+        display: none;
+    }
+}

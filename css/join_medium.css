@@ -1,0 +1,14 @@
+@media(max-width: 1000px) {
+    
+    /* header */
+    header .inner .menu {
+        display: none;
+    }
+    header .inner .my {
+        display: none;
+    }
+
+    #ham {
+        display: block;
+    }
+}
