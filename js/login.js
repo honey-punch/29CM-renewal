@@ -1,3 +1,21 @@
+// search
+const searchBtn = document.querySelector('.my a:nth-child(2)');
+const searchCloseBtn = document.querySelector('#search .inner .close a');
+const searchSection = document.querySelector('#search');
+searchBtn.addEventListener('click', () => {
+     searchSection.classList.add('block');
+});
+searchCloseBtn.addEventListener('click', () => {
+     searchSection.classList.remove('block');
+})
+
+window.addEventListener('resize', () => {
+     if (window.outerWidth < 820) {
+          searchSection.classList.remove("block")
+     }
+ });
+
+// jquery
 $(document).ready(function() {
 
 //     submenu
@@ -11,22 +29,6 @@ $(document).ready(function() {
      $(".product_menu").mouseout(function() {
          $(this).find(".submenu").stop().slideUp();
          $(this).find("div").css("transform", "scaleX(0)");
-     });
-
-//     search
-
-     $(".my li:nth-child(2) a").click(function() {
-          $("#search").show();
-     });
-    
-     $("#search .inner .close a").click(function() {
-          $("#search").hide();
-     });
-
-     $(window).resize(function() {
-          if($(window).width() < 820) {
-               $("#search").hide();
-          }
      });
 
 //     ham & opacity & submenu

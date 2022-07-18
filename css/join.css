@@ -19,6 +19,20 @@ body {
     z-index: 200;
 }
 
+/* 토글클래스 */
+.block {
+    display: block !important;
+}
+.flex {
+    display: flex !important;
+}
+.none {
+    display: none !important;
+}
+.bold {
+    font-weight: 700 !important;
+}
+
 /* header */
 header {
     width: 100%;
